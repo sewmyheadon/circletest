@@ -77,6 +77,7 @@ function twentytwelve_setup() {
 }
 add_action( 'after_setup_theme', 'twentytwelve_setup' );
 
+
 /**
  * Add support for a custom header image.
  */
