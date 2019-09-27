@@ -4,5 +4,10 @@ workflows:
   just_push:
       jobs:
       - pantheon/push
+      - playground/backstop:
+          requires:
+             - pantheon/push
 orbs:
   pantheon: pantheon-systems/pantheon@0.1.0
+  playground: fauxalgore/playground@0.0.2
+
